@@ -1,9 +1,9 @@
 {
   "name": "Pushie",
-  "version": "0.1.0",
-  "summary": "A short description of Pushie.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/Pushie",
+  "version": "0.0.12",
+  "summary": "Pushie is a small framework for Writing Push Down Automata fast and easy",
+  "description": "Pushie is a small framework for Writing Push Down Automata fast and easy. It allows you to parse words in the language you specify and even compute a full result from it usin generics.",
+  "homepage": "https://github.com/mathiasquintero/Pushie",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,8 +12,8 @@
     "Mathias Quintero": "mathias.quintero@tum.de"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/Pushie.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/mathiasquintero/Pushie.git",
+    "tag": "0.0.12"
   },
   "platforms": {
     "ios": "8.0"

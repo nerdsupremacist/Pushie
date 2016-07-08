@@ -1,5 +1,5 @@
 PODS:
-  - Pushie (0.1.0)
+  - Pushie (0.0.12)
 
 DEPENDENCIES:
   - Pushie (from `../`)
