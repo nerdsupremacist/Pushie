@@ -68,7 +68,7 @@ stateTwo.when("Z").goTo(stateThree)
 
 So we have just created all the transitions in the following picture:
 
-![alt text](https://raw.githubusercontent.com/mathiasquintero/Pushie/master/exmple.png "Taken from wikipedia")
+![alt text](https://raw.githubusercontent.com/mathiasquintero/Pushie/master/example.png "Taken from wikipedia")
 
 Now it's time to start it:
 
