@@ -1,0 +1,14 @@
+PODS:
+  - Pushie (0.1.0)
+
+DEPENDENCIES:
+  - Pushie (from `../`)
+
+EXTERNAL SOURCES:
+  Pushie:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Pushie: d7cc370e4c0fbf83b54e7515e6d1bc425df54a9b
+
+COCOAPODS: 0.39.0

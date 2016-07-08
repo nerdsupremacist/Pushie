@@ -1,0 +1,6 @@
+framework module Pushie {
+  umbrella header "Pushie-umbrella.h"
+
+  export *
+  module * { export * }
+}

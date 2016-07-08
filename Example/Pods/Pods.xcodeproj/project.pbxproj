@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09E805A26D5D0BCC4EAB48EB5E5E0D57 /* Pushie-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B7256E2DFC92AA6DF3283EBC4A0FA6C2 /* Pushie-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E175ED31D2F46D80022D4B3 /* Accumulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E175ECA1D2F46D80022D4B3 /* Accumulator.swift */; };
+		0E175ED41D2F46D80022D4B3 /* Accumulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E175ECA1D2F46D80022D4B3 /* Accumulator.swift */; };
+		0E175ED51D2F46D80022D4B3 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E175ECB1D2F46D80022D4B3 /* Action.swift */; };
+		0E175ED61D2F46D80022D4B3 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E175ECB1D2F46D80022D4B3 /* Action.swift */; };
+		0E175ED71D2F46D80022D4B3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E175ECC1D2F46D80022D4B3 /* Extensions.swift */; };
+		0E175ED81D2F46D80022D4B3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E175ECC1D2F46D80022D4B3 /* Extensions.swift */; };
+		0E175ED91D2F46D80022D4B3 /* StackElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E175ECD1D2F46D80022D4B3 /* StackElement.swift */; };
+		0E175EDA1D2F46D80022D4B3 /* StackElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E175ECD1D2F46D80022D4B3 /* StackElement.swift */; };
+		0E175EDB1D2F46D80022D4B3 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E175ECE1D2F46D80022D4B3 /* State.swift */; };
+		0E175EDC1D2F46D80022D4B3 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E175ECE1D2F46D80022D4B3 /* State.swift */; };
+		0E175EDD1D2F46D80022D4B3 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E175ECF1D2F46D80022D4B3 /* Transition.swift */; };
+		0E175EDE1D2F46D80022D4B3 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E175ECF1D2F46D80022D4B3 /* Transition.swift */; };
+		0E175EDF1D2F46D80022D4B3 /* TransitionMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E175ED01D2F46D80022D4B3 /* TransitionMaker.swift */; };
+		0E175EE01D2F46D80022D4B3 /* TransitionMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E175ED01D2F46D80022D4B3 /* TransitionMaker.swift */; };
+		0E175EE11D2F46D80022D4B3 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E175ED11D2F46D80022D4B3 /* TransitionManager.swift */; };
+		0E175EE21D2F46D80022D4B3 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E175ED11D2F46D80022D4B3 /* TransitionManager.swift */; };
+		0E175EE31D2F46D80022D4B3 /* TransitionReason.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E175ED21D2F46D80022D4B3 /* TransitionReason.swift */; };
+		0E175EE41D2F46D80022D4B3 /* TransitionReason.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E175ED21D2F46D80022D4B3 /* TransitionReason.swift */; };
+		0E175EE71D2F47D50022D4B3 /* Pushie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E175EE51D2F47D50022D4B3 /* Pushie.swift */; };
+		0E175EE81D2F47D50022D4B3 /* Pushie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E175EE51D2F47D50022D4B3 /* Pushie.swift */; };
+		0E175EE91D2F47D50022D4B3 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E175EE61D2F47D50022D4B3 /* Stack.swift */; };
+		0E175EEA1D2F47D50022D4B3 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E175EE61D2F47D50022D4B3 /* Stack.swift */; };
+		2C4127B0D9E542262C495F497877DBE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		4D5135509F6B22BC5B5D314460FB2F4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		97737ACD1EB13B1566F2C62441AD60EC /* Pods-Pushie_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CA3B0D5C28C65250F02927E72859271A /* Pods-Pushie_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A366BC345E08D9CB3EAF9DCC2CC2B0F6 /* Pods-Pushie_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E76F0514E92E954DDF0C35EFB811FF2E /* Pods-Pushie_Tests-dummy.m */; };
+		DC0D71C1147D76BE42C34F5B8C6CA2C0 /* Pushie-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D857D491F23F7AEA05FC204FA5BF23F /* Pushie-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95067D0BDBD6905FCE5197C3BCB7737F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35581955F45FE52A470969AFEC474826;
+			remoteInfo = Pushie;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E175ECA1D2F46D80022D4B3 /* Accumulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Accumulator.swift; sourceTree = "<group>"; };
+		0E175ECB1D2F46D80022D4B3 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		0E175ECC1D2F46D80022D4B3 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		0E175ECD1D2F46D80022D4B3 /* StackElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackElement.swift; sourceTree = "<group>"; };
+		0E175ECE1D2F46D80022D4B3 /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		0E175ECF1D2F46D80022D4B3 /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		0E175ED01D2F46D80022D4B3 /* TransitionMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionMaker.swift; sourceTree = "<group>"; };
+		0E175ED11D2F46D80022D4B3 /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
+		0E175ED21D2F46D80022D4B3 /* TransitionReason.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionReason.swift; sourceTree = "<group>"; };
+		0E175EE51D2F47D50022D4B3 /* Pushie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pushie.swift; sourceTree = "<group>"; };
+		0E175EE61D2F47D50022D4B3 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		464BE50792FDA6D9D13D01650D25D0B8 /* Pods-Pushie_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pushie_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		47DC2445A3B125BFAB4AA4D5DBB70115 /* Pods_Pushie_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pushie_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58435DEA7775942235D3EAEFC0583258 /* Pushie-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pushie-prefix.pch"; sourceTree = "<group>"; };
+		7A99468B135FB8BF5CEDAAE3008101E5 /* Pods-Pushie_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pushie_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		7B1D8E731E048C848170B36FE174C0BA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D857D491F23F7AEA05FC204FA5BF23F /* Pushie-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pushie-dummy.m"; sourceTree = "<group>"; };
+		834AC1FDD2E4432A0F3281DF1CAFAA9B /* Pods-Pushie_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pushie_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A35E848F2821079A09FBDBEC87FF8D00 /* Pods-Pushie_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pushie_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		AB5DE6FCE3A21D2A05D7FE7AB44EF522 /* Pushie.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pushie.modulemap; sourceTree = "<group>"; };
+		B7256E2DFC92AA6DF3283EBC4A0FA6C2 /* Pushie-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pushie-umbrella.h"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CA3B0D5C28C65250F02927E72859271A /* Pods-Pushie_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pushie_Tests-umbrella.h"; sourceTree = "<group>"; };
+		CD7A1BD4A721C229B7B504CCE9AF1E39 /* Pods-Pushie_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pushie_Tests-resources.sh"; sourceTree = "<group>"; };
+		D26E5BCC9DFF854F8C86E605108A13F3 /* Pushie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pushie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D99491D0F368783D8B146C822DC786E2 /* Pods-Pushie_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pushie_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		DB675686C3DAB3EDE334D8357BFA3DF0 /* Pushie.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pushie.xcconfig; sourceTree = "<group>"; };
+		E76F0514E92E954DDF0C35EFB811FF2E /* Pods-Pushie_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pushie_Tests-dummy.m"; sourceTree = "<group>"; };
+		F782ED7F102056475FC9DF1D6D1A57C0 /* Pods-Pushie_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Pushie_Tests.modulemap"; sourceTree = "<group>"; };
+		F9F397E046E151D66DECD8A9806C7185 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24CD97D27EB9DF648C16FB5667023E3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D5135509F6B22BC5B5D314460FB2F4E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B12322F5A078B4C713C1F579F3126D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C4127B0D9E542262C495F497877DBE7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		307232C455059368F632BF8CD6359AE3 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E6E3F4A850111C8CD21EC8995BE8E73 /* Pushie */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		495862D3D27876ABAD7DE36FF1374A43 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E487EE97C3FDD47C65FFBEAA3A67729 /* Pods-Pushie_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7AC0358531AF5608417064EC79428824 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9F397E046E151D66DECD8A9806C7185 /* Info.plist */,
+				AB5DE6FCE3A21D2A05D7FE7AB44EF522 /* Pushie.modulemap */,
+				DB675686C3DAB3EDE334D8357BFA3DF0 /* Pushie.xcconfig */,
+				7D857D491F23F7AEA05FC204FA5BF23F /* Pushie-dummy.m */,
+				58435DEA7775942235D3EAEFC0583258 /* Pushie-prefix.pch */,
+				B7256E2DFC92AA6DF3283EBC4A0FA6C2 /* Pushie-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pushie";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				307232C455059368F632BF8CD6359AE3 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				E6F1F50087AC94E3F23C42CEDC4139F0 /* Products */,
+				495862D3D27876ABAD7DE36FF1374A43 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7E487EE97C3FDD47C65FFBEAA3A67729 /* Pods-Pushie_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7B1D8E731E048C848170B36FE174C0BA /* Info.plist */,
+				F782ED7F102056475FC9DF1D6D1A57C0 /* Pods-Pushie_Tests.modulemap */,
+				834AC1FDD2E4432A0F3281DF1CAFAA9B /* Pods-Pushie_Tests-acknowledgements.markdown */,
+				464BE50792FDA6D9D13D01650D25D0B8 /* Pods-Pushie_Tests-acknowledgements.plist */,
+				E76F0514E92E954DDF0C35EFB811FF2E /* Pods-Pushie_Tests-dummy.m */,
+				7A99468B135FB8BF5CEDAAE3008101E5 /* Pods-Pushie_Tests-frameworks.sh */,
+				CD7A1BD4A721C229B7B504CCE9AF1E39 /* Pods-Pushie_Tests-resources.sh */,
+				CA3B0D5C28C65250F02927E72859271A /* Pods-Pushie_Tests-umbrella.h */,
+				D99491D0F368783D8B146C822DC786E2 /* Pods-Pushie_Tests.debug.xcconfig */,
+				A35E848F2821079A09FBDBEC87FF8D00 /* Pods-Pushie_Tests.release.xcconfig */,
+			);
+			name = "Pods-Pushie_Tests";
+			path = "Target Support Files/Pods-Pushie_Tests";
+			sourceTree = "<group>";
+		};
+		9E6E3F4A850111C8CD21EC8995BE8E73 /* Pushie */ = {
+			isa = PBXGroup;
+			children = (
+				AE9CFDF40A7EDC6A2EBDEF04A1697021 /* Pushie */,
+				7AC0358531AF5608417064EC79428824 /* Support Files */,
+			);
+			name = Pushie;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		AE9CFDF40A7EDC6A2EBDEF04A1697021 /* Pushie */ = {
+			isa = PBXGroup;
+			children = (
+				E51110699404AB708E71235E98BBC629 /* Classes */,
+			);
+			path = Pushie;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E51110699404AB708E71235E98BBC629 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0E175EE51D2F47D50022D4B3 /* Pushie.swift */,
+				0E175EE61D2F47D50022D4B3 /* Stack.swift */,
+				0E175ECA1D2F46D80022D4B3 /* Accumulator.swift */,
+				0E175ECB1D2F46D80022D4B3 /* Action.swift */,
+				0E175ECC1D2F46D80022D4B3 /* Extensions.swift */,
+				0E175ECD1D2F46D80022D4B3 /* StackElement.swift */,
+				0E175ECE1D2F46D80022D4B3 /* State.swift */,
+				0E175ECF1D2F46D80022D4B3 /* Transition.swift */,
+				0E175ED01D2F46D80022D4B3 /* TransitionMaker.swift */,
+				0E175ED11D2F46D80022D4B3 /* TransitionManager.swift */,
+				0E175ED21D2F46D80022D4B3 /* TransitionReason.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E6F1F50087AC94E3F23C42CEDC4139F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47DC2445A3B125BFAB4AA4D5DBB70115 /* Pods_Pushie_Tests.framework */,
+				D26E5BCC9DFF854F8C86E605108A13F3 /* Pushie.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		191C306B994FD366E7E96FC4D188D1FC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97737ACD1EB13B1566F2C62441AD60EC /* Pods-Pushie_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7024284B9B17D6C29C546063F9436110 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09E805A26D5D0BCC4EAB48EB5E5E0D57 /* Pushie-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2D7055352C86F5869C7E0367273BA1CA /* Pods-Pushie_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E3B148DB131C4BEFAD31F7C86F86974 /* Build configuration list for PBXNativeTarget "Pods-Pushie_Tests" */;
+			buildPhases = (
+				50A0CE93E4D7BE90BC67008451D75E15 /* Sources */,
+				6B12322F5A078B4C713C1F579F3126D6 /* Frameworks */,
+				191C306B994FD366E7E96FC4D188D1FC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21F877770B02F8A279FBF5DC7443CDA2 /* PBXTargetDependency */,
+			);
+			name = "Pods-Pushie_Tests";
+			productName = "Pods-Pushie_Tests";
+			productReference = 47DC2445A3B125BFAB4AA4D5DBB70115 /* Pods_Pushie_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		35581955F45FE52A470969AFEC474826 /* Pushie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 501DB5C83BE9F7060CA85F0A3E7DF38C /* Build configuration list for PBXNativeTarget "Pushie" */;
+			buildPhases = (
+				8B5FF54B720099EA9958402D5DFDFFB2 /* Sources */,
+				24CD97D27EB9DF648C16FB5667023E3C /* Frameworks */,
+				7024284B9B17D6C29C546063F9436110 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pushie;
+			productName = Pushie;
+			productReference = D26E5BCC9DFF854F8C86E605108A13F3 /* Pushie.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = E6F1F50087AC94E3F23C42CEDC4139F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D7055352C86F5869C7E0367273BA1CA /* Pods-Pushie_Tests */,
+				35581955F45FE52A470969AFEC474826 /* Pushie */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50A0CE93E4D7BE90BC67008451D75E15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E175EE31D2F46D80022D4B3 /* TransitionReason.swift in Sources */,
+				0E175EDD1D2F46D80022D4B3 /* Transition.swift in Sources */,
+				0E175ED31D2F46D80022D4B3 /* Accumulator.swift in Sources */,
+				0E175ED91D2F46D80022D4B3 /* StackElement.swift in Sources */,
+				0E175EE91D2F47D50022D4B3 /* Stack.swift in Sources */,
+				0E175EDF1D2F46D80022D4B3 /* TransitionMaker.swift in Sources */,
+				0E175ED51D2F46D80022D4B3 /* Action.swift in Sources */,
+				A366BC345E08D9CB3EAF9DCC2CC2B0F6 /* Pods-Pushie_Tests-dummy.m in Sources */,
+				0E175EE11D2F46D80022D4B3 /* TransitionManager.swift in Sources */,
+				0E175ED71D2F46D80022D4B3 /* Extensions.swift in Sources */,
+				0E175EE71D2F47D50022D4B3 /* Pushie.swift in Sources */,
+				0E175EDB1D2F46D80022D4B3 /* State.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B5FF54B720099EA9958402D5DFDFFB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E175EE41D2F46D80022D4B3 /* TransitionReason.swift in Sources */,
+				0E175EDE1D2F46D80022D4B3 /* Transition.swift in Sources */,
+				0E175ED41D2F46D80022D4B3 /* Accumulator.swift in Sources */,
+				0E175EDA1D2F46D80022D4B3 /* StackElement.swift in Sources */,
+				0E175EEA1D2F47D50022D4B3 /* Stack.swift in Sources */,
+				0E175EE01D2F46D80022D4B3 /* TransitionMaker.swift in Sources */,
+				0E175ED61D2F46D80022D4B3 /* Action.swift in Sources */,
+				DC0D71C1147D76BE42C34F5B8C6CA2C0 /* Pushie-dummy.m in Sources */,
+				0E175EE21D2F46D80022D4B3 /* TransitionManager.swift in Sources */,
+				0E175ED81D2F46D80022D4B3 /* Extensions.swift in Sources */,
+				0E175EE81D2F47D50022D4B3 /* Pushie.swift in Sources */,
+				0E175EDC1D2F46D80022D4B3 /* State.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		21F877770B02F8A279FBF5DC7443CDA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Pushie;
+			target = 35581955F45FE52A470969AFEC474826 /* Pushie */;
+			targetProxy = 95067D0BDBD6905FCE5197C3BCB7737F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8338E6D0347E3CC4290E80CA2807B5C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB675686C3DAB3EDE334D8357BFA3DF0 /* Pushie.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pushie/Pushie-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pushie/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pushie/Pushie.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Pushie;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		96FEE1D05846FECD833AB125083FC96F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A35E848F2821079A09FBDBEC87FF8D00 /* Pods-Pushie_Tests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Pushie_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pushie_Tests/Pods-Pushie_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Pushie_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		97DA951A43EB550BA1D6214EFED8BD0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB675686C3DAB3EDE334D8357BFA3DF0 /* Pushie.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pushie/Pushie-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pushie/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pushie/Pushie.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Pushie;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E0C8EF66BCD18444DBEF6806C5E33760 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D99491D0F368783D8B146C822DC786E2 /* Pods-Pushie_Tests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Pushie_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pushie_Tests/Pods-Pushie_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Pushie_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
+				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E3B148DB131C4BEFAD31F7C86F86974 /* Build configuration list for PBXNativeTarget "Pods-Pushie_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0C8EF66BCD18444DBEF6806C5E33760 /* Debug */,
+				96FEE1D05846FECD833AB125083FC96F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		501DB5C83BE9F7060CA85F0A3E7DF38C /* Build configuration list for PBXNativeTarget "Pushie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8338E6D0347E3CC4290E80CA2807B5C2 /* Debug */,
+				97DA951A43EB550BA1D6214EFED8BD0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

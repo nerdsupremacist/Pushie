@@ -1,0 +1,6 @@
+use_frameworks!
+target 'Pushie_Tests' do
+  pod 'Pushie', :path => '../'
+  
+  
+end

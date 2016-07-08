@@ -1,0 +1,22 @@
+{
+  "name": "Pushie",
+  "version": "0.1.0",
+  "summary": "A short description of Pushie.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/Pushie",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Mathias Quintero": "mathias.quintero@tum.de"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/Pushie.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Pushie/Classes/**/*"
+}
