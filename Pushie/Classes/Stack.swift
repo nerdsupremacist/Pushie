@@ -29,8 +29,16 @@ public class Stack {
         stack.append(element)
     }
     
+    func push(element: String) {
+        push(StackElement(identifier: element))
+    }
+    
     func change(element: StackElement) {
         stack[stack.count - 1] = element
+    }
+    
+    func change(element: String) {
+        change(StackElement(identifier: element))
     }
     
     func copy() -> Stack {

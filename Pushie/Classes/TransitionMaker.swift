@@ -34,6 +34,10 @@ class TransitionMaker<T> {
         return self
     }
     
+    func push(element: String) -> TransitionMaker<T> {
+        return push(StackElement(identifier: element))
+    }
+    
     func pop() -> TransitionMaker<T> {
         currentTransition = Transition(action: .Pop, nextState: currentTransition.nextState, handler: currentTransition.handler, deletes: currentTransition.deletes)
         manager.dict[currentReason] = currentTransition
@@ -44,6 +48,10 @@ class TransitionMaker<T> {
         currentTransition = Transition(action: .Change(element), nextState: currentTransition.nextState, handler: currentTransition.handler, deletes: currentTransition.deletes)
         manager.dict[currentReason] = currentTransition
         return self
+    }
+    
+    func change(element: String) -> TransitionMaker<T> {
+        return change(StackElement(identifier: element))
     }
     
     func goTo(state: State<T>) -> TransitionMaker<T> {
