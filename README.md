@@ -7,6 +7,10 @@ Pushie allows you to create Push down automata quickly and easily, for quick and
 
 First install the Pod
 
+```Ruby
+pod 'Pushie'
+```
+
 ## Creating your Automaton
 
 To create you Automaton you will have to:
