@@ -7,16 +7,16 @@
 //
 
 import Foundation
-struct StackElement: Hashable {
+public struct StackElement: Hashable {
     let identifier: String
     
-    var hashValue: Int {
+    public var hashValue: Int {
         get {
             return identifier.hashValue
         }
     }
 }
 
-func ==(lhs: StackElement, rhs: StackElement) -> Bool {
+public func ==(lhs: StackElement, rhs: StackElement) -> Bool {
     return lhs.identifier == rhs.identifier
 }

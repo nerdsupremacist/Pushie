@@ -7,19 +7,24 @@
 //
 
 import Foundation
-class State<T> {
+public class State<T> {
     
-    let finite: Bool
+    let final: Bool
     
     var transitions: [StackElement:TransitionManager<T>]
     
-    init(transitions: [StackElement:TransitionManager<T>] = [:], finite: Bool = false) {
+    init(transitions: [StackElement:TransitionManager<T>] = [:], final: Bool = false) {
         self.transitions = transitions
-        self.finite = finite
+        self.final = final
+    }
+    
+    public init(final: Bool = false) {
+        self.transitions = [:]
+        self.final = final
     }
     
     func handleInput(input: String, stack: Stack, accumulator: Accumulator<T>) -> T? {
-        if input.isEmpty && finite {
+        if input.isEmpty && final {
             return accumulator.accumulatedObject
         }
         if let element = stack.last, transitionsForState = transitions[element]?.dict {
@@ -61,12 +66,12 @@ class State<T> {
         return nil
     }
     
-    func when(element: String) -> TransitionMaker<T> {
+    public func when(element: String) -> TransitionMaker<T> {
         let stackElement = StackElement(identifier: element)
         return when(stackElement)
     }
     
-    func when(element: StackElement) -> TransitionMaker<T> {
+    public func when(element: StackElement) -> TransitionMaker<T> {
         let dict = transitions[element] ?? TransitionManager()
         transitions[element] = dict
         return TransitionMaker(state: self, manager: dict)

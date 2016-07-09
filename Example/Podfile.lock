@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  Pushie: d7cc370e4c0fbf83b54e7515e6d1bc425df54a9b
+  Pushie: 0a1c93156dece9a2ab902c026c7325fb4b53a89f
 
 COCOAPODS: 0.39.0

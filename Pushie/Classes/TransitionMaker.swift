@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class TransitionMaker<T> {
+public class TransitionMaker<T> {
     
     let state: State<T>
     var manager: TransitionManager<T>
@@ -21,40 +21,40 @@ class TransitionMaker<T> {
         self.currentReason = .Epsilon
     }
     
-    func on(string: String) -> TransitionMaker<T> {
+    public func on(string: String) -> TransitionMaker<T> {
         manager.dict[currentReason] = nil
         currentReason = TransitionReason.Regex(string)
         manager.dict[currentReason] = currentTransition
         return self
     }
     
-    func push(element: StackElement) -> TransitionMaker<T> {
+    public func push(element: StackElement) -> TransitionMaker<T> {
         currentTransition = Transition(action: .Push(element), nextState: currentTransition.nextState, handler: currentTransition.handler, deletes: currentTransition.deletes)
         manager.dict[currentReason] = currentTransition
         return self
     }
     
-    func push(element: String) -> TransitionMaker<T> {
+    public func push(element: String) -> TransitionMaker<T> {
         return push(StackElement(identifier: element))
     }
     
-    func pop() -> TransitionMaker<T> {
+    public func pop() -> TransitionMaker<T> {
         currentTransition = Transition(action: .Pop, nextState: currentTransition.nextState, handler: currentTransition.handler, deletes: currentTransition.deletes)
         manager.dict[currentReason] = currentTransition
         return self
     }
     
-    func change(element: StackElement) -> TransitionMaker<T> {
+    public func change(element: StackElement) -> TransitionMaker<T> {
         currentTransition = Transition(action: .Change(element), nextState: currentTransition.nextState, handler: currentTransition.handler, deletes: currentTransition.deletes)
         manager.dict[currentReason] = currentTransition
         return self
     }
     
-    func change(element: String) -> TransitionMaker<T> {
+    public func change(element: String) -> TransitionMaker<T> {
         return change(StackElement(identifier: element))
     }
     
-    func goTo(state: State<T>) -> TransitionMaker<T> {
+    public func goTo(state: State<T>) -> TransitionMaker<T> {
         currentTransition = Transition(action: currentTransition.action, nextState: state, handler: currentTransition.handler, deletes: currentTransition.deletes)
         manager.dict[currentReason] = currentTransition
         return self

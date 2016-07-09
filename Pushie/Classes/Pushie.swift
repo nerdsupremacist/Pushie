@@ -7,13 +7,13 @@
 //
 
 import Foundation
-class Pushie<T> {
+public class Pushie<T> {
     
     var stack: Stack
     var state: State<T>?
     var start: T
     
-    init(start: T, state: State<T>? = nil, firstStackElement: StackElement? = nil) {
+    public init(start: T, state: State<T>? = nil, firstStackElement: StackElement? = nil) {
         self.start = start
         self.state = state
         self.stack = Stack()
@@ -22,7 +22,7 @@ class Pushie<T> {
         }
     }
     
-    func handle(input: String) -> T? {
+    public func handle(input: String) -> T? {
         return state?.handleInput(input, stack: stack, accumulator: Accumulator(startObject: start))
     }
     
