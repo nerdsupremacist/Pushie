@@ -14,9 +14,9 @@ func main() {
     let stateTwo = State<Int>()
     let stateThree = State<Int>(final: true)
     
-    stateOne.when("Z").on("a").push("A")
+    stateOne.when("Z").on("a").push("A").transform({ $1 + 1 })
     stateOne.when("Z").goTo(stateTwo)
-    stateOne.when("A").on("a").push("A")
+    stateOne.when("A").on("a").push("A").transform({ $1 + 1 })
     stateOne.when("A").goTo(stateTwo)
     stateTwo.when("A").on("b").pop()
     stateTwo.when("Z").goTo(stateThree)

@@ -60,7 +60,7 @@ public class TransitionMaker<T> {
         return self
     }
     
-    func transform(handler: (String, T) -> T) -> TransitionMaker<T> {
+    public func transform(handler: (String, T) -> T) -> TransitionMaker<T> {
         currentTransition = Transition(action: currentTransition.action, nextState: currentTransition.nextState, handler: handler, deletes: currentTransition.deletes)
         manager.dict[currentReason] = currentTransition
         return self
