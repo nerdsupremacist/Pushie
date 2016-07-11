@@ -13,7 +13,6 @@
 		0EB1DDF31D31CE1700A4DDDE /* Grammar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB1DDF21D31CE1700A4DDDE /* Grammar.swift */; };
 		0EB1DDF51D31CE6600A4DDDE /* GrammarVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB1DDF41D31CE6600A4DDDE /* GrammarVariable.swift */; };
 		0EB1DDF71D31CE6D00A4DDDE /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB1DDF61D31CE6D00A4DDDE /* Rule.swift */; };
-		0EB1DDFB1D31CF2500A4DDDE /* ReachableManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB1DDFA1D31CF2500A4DDDE /* ReachableManager.swift */; };
 		0EB1DDFD1D31CFFE00A4DDDE /* Resolvable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB1DDFC1D31CFFE00A4DDDE /* Resolvable.swift */; };
 		1186C1B26FB7D79681F853000812296F /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F5865F63ECC1A4F8132700B793B8EA /* Action.swift */; };
 		176D69C611B3E03A42CD84E684CE1009 /* TransitionReason.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42884E8D97E516A9CA576317ED6DA03 /* TransitionReason.swift */; };
@@ -49,7 +48,6 @@
 		0EB1DDF21D31CE1700A4DDDE /* Grammar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grammar.swift; sourceTree = "<group>"; };
 		0EB1DDF41D31CE6600A4DDDE /* GrammarVariable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrammarVariable.swift; sourceTree = "<group>"; };
 		0EB1DDF61D31CE6D00A4DDDE /* Rule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
-		0EB1DDFA1D31CF2500A4DDDE /* ReachableManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachableManager.swift; sourceTree = "<group>"; };
 		0EB1DDFC1D31CFFE00A4DDDE /* Resolvable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resolvable.swift; sourceTree = "<group>"; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		464BE50792FDA6D9D13D01650D25D0B8 /* Pods-Pushie_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pushie_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -131,7 +129,6 @@
 				0EB1DDF61D31CE6D00A4DDDE /* Rule.swift */,
 				0EB1DDFC1D31CFFE00A4DDDE /* Resolvable.swift */,
 				0E8874351D31D560001ED43C /* Regex.swift */,
-				0EB1DDFA1D31CF2500A4DDDE /* ReachableManager.swift */,
 			);
 			name = CFG;
 			sourceTree = "<group>";
@@ -339,7 +336,6 @@
 				0EB1DDF51D31CE6600A4DDDE /* GrammarVariable.swift in Sources */,
 				0E8874361D31D560001ED43C /* Regex.swift in Sources */,
 				0E8874381D31D5AF001ED43C /* Rules.swift in Sources */,
-				0EB1DDFB1D31CF2500A4DDDE /* ReachableManager.swift in Sources */,
 				0EB1DDF71D31CE6D00A4DDDE /* Rule.swift in Sources */,
 				A366BC345E08D9CB3EAF9DCC2CC2B0F6 /* Pods-Pushie_Tests-dummy.m in Sources */,
 				0EB1DDFD1D31CFFE00A4DDDE /* Resolvable.swift in Sources */,

@@ -18,7 +18,7 @@ public class Pushie<T> {
         self.state = state
         self.stack = Stack()
         if let firstStackElement = firstStackElement {
-            stack.push(firstStackElement)
+            stack.push([firstStackElement])
         }
     }
     

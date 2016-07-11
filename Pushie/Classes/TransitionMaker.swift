@@ -29,13 +29,22 @@ public class TransitionMaker<T> {
     }
     
     public func push(element: StackElement) -> TransitionMaker<T> {
-        currentTransition = Transition(action: .Push(element), nextState: currentTransition.nextState, handler: currentTransition.handler, deletes: currentTransition.deletes)
-        manager.dict[currentReason] = currentTransition
-        return self
+        return push([element])
     }
     
     public func push(element: String) -> TransitionMaker<T> {
         return push(StackElement(identifier: element))
+    }
+    
+    public func push(elements: [StackElement]) -> TransitionMaker<T> {
+        currentTransition = Transition(action: .Push(elements), nextState: currentTransition.nextState, handler: currentTransition.handler, deletes: currentTransition.deletes)
+        manager.dict[currentReason] = currentTransition
+        return self
+    }
+    
+    public func push(elements: [String]) -> TransitionMaker<T> {
+        let newElements = elements.map({ StackElement(identifier: $0) })
+        return push(newElements)
     }
     
     public func pop() -> TransitionMaker<T> {

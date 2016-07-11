@@ -13,6 +13,12 @@ public class State<T> {
     
     var transitions: [StackElement:TransitionManager<T>]
     
+    var id: String {
+        get {
+            return String(ObjectIdentifier(self).uintValue)
+        }
+    }
+    
     private init(transitions: [StackElement:TransitionManager<T>] = [:], final: Bool = false) {
         self.transitions = transitions
         self.final = final

@@ -8,5 +8,13 @@
 
 import Foundation
 struct Regex: Resolvable {
+    
     let expression: String
+    
+    var id: String {
+        get {
+            return expression
+        }
+    }
+    
 }

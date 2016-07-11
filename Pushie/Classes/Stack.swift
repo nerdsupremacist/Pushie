@@ -25,12 +25,13 @@ public class Stack {
         stack.removeLast()
     }
     
-    func push(element: StackElement) {
-        stack.append(element)
+    func push(elements: [StackElement]) {
+        stack.appendContentsOf(elements)
     }
     
-    func push(element: String) {
-        push(StackElement(identifier: element))
+    func push(elements: [String]) {
+        let newElements = elements.map({ StackElement(identifier: $0) })
+        push(newElements)
     }
     
     func change(element: StackElement) {

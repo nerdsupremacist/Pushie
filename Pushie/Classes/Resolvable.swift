@@ -7,4 +7,6 @@
 //
 
 import Foundation
-protocol Resolvable {}
+protocol Resolvable {
+    var id: String { get }
+}

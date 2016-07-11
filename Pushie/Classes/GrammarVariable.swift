@@ -15,19 +15,27 @@ public class GrammarVariable<T>: Resolvable, Equatable {
         rules = Rules<T>()
     }
     
-    var hashValue: Int {
+    var id: String {
         get {
-            return Int(String(ObjectIdentifier(self).uintValue)) ?? 0
+            return String(hashValue)
         }
     }
     
-    func to(regex: String) -> Rule<T> {
+    var hashValue: Int {
+        get {
+            return Int(ObjectIdentifier(self).uintValue)
+        }
+    }
+    
+    public func to(regex: String) -> Rule<T> {
         let rule = Rule<T>()
+        rules.add(rule)
         return rule.and(regex)
     }
     
-    func to(variable: GrammarVariable<T>) -> Rule<T> {
+    public func to(variable: GrammarVariable<T>) -> Rule<T> {
         let rule = Rule<T>()
+        rules.add(rule)
         return rule.and(variable)
     }
 

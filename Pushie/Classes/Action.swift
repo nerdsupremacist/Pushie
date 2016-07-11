@@ -11,14 +11,14 @@ enum Action<T> {
     
     case Neutral
     case Pop
-    case Push(StackElement)
+    case Push([StackElement])
     case Change(StackElement)
     
     func handle(stack: Stack) {
         switch self {
         case .Neutral: return;
         case .Pop: stack.pop()
-        case .Push(let element): stack.push(element)
+        case .Push(let elements): stack.push(elements)
         case .Change(let element): stack.change(element)
         }
     }

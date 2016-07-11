@@ -38,3 +38,9 @@ extension String {
     }
     
 }
+
+extension Array {
+    var match : (head: Element, tail: [Element])? {
+        return (count > 0) ? (self[0],Array(self[1..<count])) : nil
+    }
+}
