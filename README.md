@@ -46,7 +46,7 @@ let stateTwo = State<Int>()
 If a state is a final state just do:
 
 ```Swift
-let stateThree = State<Int>(finite: true)
+let stateThree = State<Int>(final: true)
 ```
 
 ### Transitions
@@ -112,7 +112,7 @@ To create it in as little steps as possible we need to determine a CFG that shou
 For that you simply have to define your Variables:
 
 ```Swift
-let A = Grammar<Int>()
+let A = GrammarVariable<Int>()
 ```
 
 Now you have to create the productions. In this case we want A to be translated into either an Empty string or a 0 and a 1 with another A in the middle:
