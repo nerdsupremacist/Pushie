@@ -1,6 +1,6 @@
 {
   "name": "Pushie",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "summary": "Pushie is a small framework for Writing Push Down Automata fast and easy",
   "description": "Pushie is a small framework for Writing Push Down Automata fast and easy. It allows you to parse words in the language you specify and even compute a full result from it usin generics.",
   "homepage": "https://github.com/mathiasquintero/Pushie",
