@@ -29,7 +29,10 @@ In this case we will be writing an Automaton that accepts the Language that has 
 
 Basically we want to create an Automaton that accepts the language L. L being defined as:
 
-![alt text](https://raw.githubusercontent.com/mathiasquintero/Pushie/master/language.png "Language Definition")
+
+<img src="https://raw.githubusercontent.com/mathiasquintero/Pushie/master/language.png" height=40>
+
+
 
 ### Creating the States
 
@@ -102,7 +105,9 @@ We will now be working with the same example as before.
 
 To create it in as little steps as possible we need to determine a CFG that should look like this:
 
-![alt text](https://raw.githubusercontent.com/mathiasquintero/Pushie/master/grammar.png "Context Free Grammar")
+
+<img src="https://raw.githubusercontent.com/mathiasquintero/Pushie/master/grammar.png" height=90>
+
 
 For that you simply have to define your Variables:
 
