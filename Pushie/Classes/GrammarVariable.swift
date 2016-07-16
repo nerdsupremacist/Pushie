@@ -63,6 +63,16 @@ public class GrammarVariable<T>: Resolvable, Equatable {
 
 }
 
-func ==<T>(lhs: GrammarVariable<T>, rhs: GrammarVariable<T>) -> Bool {
+/**
+ Will Compare two Variables. Note: This is not the actual equality but only Identity Equality.
+ This will not tell you if two Variables arrive at the same Language.
+ 
+ - Parameters:
+ - lhs: Left Variable
+ - rhs: Right Variable
+ 
+ - Returns: boolean value representing if both Variables are the exact same by comparing the Object ID.
+ */
+public func ==<T>(lhs: GrammarVariable<T>, rhs: GrammarVariable<T>) -> Bool {
     return lhs.hashValue == rhs.hashValue
 }
