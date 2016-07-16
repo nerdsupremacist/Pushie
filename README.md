@@ -5,6 +5,11 @@ Push Down Automaton Creation in Swift. The easy way.
 
 Pushie allows you to create Push down automata quickly and easily, for quick and simple Parsing of your own defined languages. Designed to be easy to read and understand
 
+### Documentation
+
+You can see the automatically generated Documentation here:
+[Documentation](http://cocoadocs.org/docsets/Pushie/0.0.18/)
+
 ## Usage
 
 First install the Pod
