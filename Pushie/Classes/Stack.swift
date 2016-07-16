@@ -34,12 +34,14 @@ public class Stack {
         push(newElements)
     }
     
-    func change(element: StackElement) {
-        stack[stack.count - 1] = element
+    func change(elements: [StackElement]) {
+        pop()
+        push(elements)
     }
     
-    func change(element: String) {
-        change(StackElement(identifier: element))
+    func change(elements: [String]) {
+        pop()
+        push(elements)
     }
     
     func copy() -> Stack {

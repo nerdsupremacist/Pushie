@@ -52,7 +52,7 @@ stateOne.when("Z").goTo(stateThree)
 Means that we can make an epsilon transition from state 1 to state 3 if the last item in the stack is Z.
 
 ```Swift
-stateOne.when("A").on("1").goTo(stateTwo).pop()
+stateOne.when("A").on("0").goTo(stateTwo).pop()
 ```
 Will create a transition from state 1 to state 2 if the last item in the Stack is A and it reads a "1". After doing so it will pop the last item from the Stack.
 
@@ -80,6 +80,44 @@ Now it's time to start it:
 let automaton = Pushie(start: 0, state: stateOne)
 automaton.stack.push("C")
 
-automaton.handle("1100") // Optional(2)
-automaton.handle("11100") // nil
+automaton.handle("0011") // Optional(2)
+automaton.handle("00011") // nil
 ```
+
+## Creating Context Free Grammars
+
+Creating automata is pretty tedious. That's why Pushie allows you to define Context Free grammars just as easily and translate them into automata.
+We will now be working with the same example as before.
+
+For that you simply have to define your Variables:
+
+```Swift
+let A = Grammar<Int>()
+```
+
+Now you have to create the productions. In this case we want A to be translated into either an Empty string or a 0 and a 1 with another A in the middle:
+
+```Swift
+A.to("0").and(A).to("1").transform() { $1 + 1 }
+A.to("")
+```
+
+And now create a grammar starting from A:
+
+```Swift
+let grammar = Grammar(startVariable: A)
+```
+
+And now just like before you can call the handle function with both the starting value of the accumulator and the input:
+
+```Swift
+grammar.handle(0, input: "0011") // Optional(2)
+grammar.handle(2, input: "0011") // Optional(4)
+grammar.handle(0, input: "00011") // nil
+```
+
+Best of luck with Pushie!
+
+Built with ♥
+
+

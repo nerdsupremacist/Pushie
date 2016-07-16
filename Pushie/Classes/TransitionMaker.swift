@@ -54,7 +54,17 @@ public class TransitionMaker<T> {
     }
     
     public func change(element: StackElement) -> TransitionMaker<T> {
-        currentTransition = Transition(action: .Change(element), nextState: currentTransition.nextState, handler: currentTransition.handler, deletes: currentTransition.deletes)
+        currentTransition = Transition(action: .Change([element]), nextState: currentTransition.nextState, handler: currentTransition.handler, deletes: currentTransition.deletes)
+        manager.dict[currentReason] = currentTransition
+        return self
+    }
+    
+    public func change(elements: [String]) -> TransitionMaker<T> {
+        return change(elements.map({ StackElement(identifier: $0) }))
+    }
+    
+    public func change(elements: [StackElement]) -> TransitionMaker<T> {
+        currentTransition = Transition(action: .Change(elements), nextState: currentTransition.nextState, handler: currentTransition.handler, deletes: currentTransition.deletes)
         manager.dict[currentReason] = currentTransition
         return self
     }

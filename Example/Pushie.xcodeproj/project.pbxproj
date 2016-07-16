@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E5EB9941D39A58900D3F8B5 /* ExampleCFG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5EB9931D39A58900D3F8B5 /* ExampleCFG.swift */; };
 		0EFC4C9B1D319864003D0FE2 /* ExamplePDA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFC4C9A1D319864003D0FE2 /* ExamplePDA.swift */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		913E553C4EA21AAEFD76A749 /* Pods_Pushie_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 645184E6ABD4E7D59F041187 /* Pods_Pushie_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E5EB9931D39A58900D3F8B5 /* ExampleCFG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleCFG.swift; sourceTree = "<group>"; };
 		0EFC4C9A1D319864003D0FE2 /* ExamplePDA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamplePDA.swift; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* Pushie_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pushie_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,6 +43,7 @@
 			isa = PBXGroup;
 			children = (
 				0EFC4C9A1D319864003D0FE2 /* ExamplePDA.swift */,
+				0E5EB9931D39A58900D3F8B5 /* ExampleCFG.swift */,
 			);
 			name = Examples;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				0E5EB9941D39A58900D3F8B5 /* ExampleCFG.swift in Sources */,
 				0EFC4C9B1D319864003D0FE2 /* ExamplePDA.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

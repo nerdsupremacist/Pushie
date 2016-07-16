@@ -63,7 +63,8 @@ public class State<T> {
                 default:
                     let copy = accumulator.copy()
                     let newStack = stack.copy()
-                    if let state = option.1.handle(newStack, accumulator: copy), result = state.handleInput(input, stack: newStack, accumulator: copy) {
+                    let state = option.1.handle(newStack, accumulator: copy) ?? self
+                    if let result = state.handleInput(input, stack: newStack, accumulator: copy) {
                         return result
                     }
                 }

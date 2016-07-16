@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Pushie'
-  s.version          = '0.0.14'
+  s.version          = '0.0.15'
   s.summary          = 'Pushie is a small framework for Writing Push Down Automata fast and easy'
   s.description      = "Pushie is a small framework for Writing Push Down Automata fast and easy. It allows you to parse words in the language you specify and even compute a full result from it usin generics."
 
