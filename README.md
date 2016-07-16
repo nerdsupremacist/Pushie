@@ -20,6 +20,10 @@ To create you Automaton you will have to:
 
 In this case we will be writing an Automaton that accepts the Language that has n 0's followed by n 1's and will return the respective n as a result.
 
+Basically we want to create an Automaton that accepts the language L. L being defined as:
+
+![alt text](https://raw.githubusercontent.com/mathiasquintero/Pushie/master/language.png "Language Definition")
+
 ### Creating the States
 
 To create a state simply instantiate it. Remember to use the generics to specify what your product will be.
@@ -88,6 +92,10 @@ automaton.handle("00011") // nil
 
 Creating automata is pretty tedious. That's why Pushie allows you to define Context Free grammars just as easily and translate them into automata.
 We will now be working with the same example as before.
+
+To create it in as little steps as possible we need to determine a CFG that should look like this:
+
+![alt text](https://raw.githubusercontent.com/mathiasquintero/Pushie/master/grammar.png "Context Free Grammar")
 
 For that you simply have to define your Variables:
 
