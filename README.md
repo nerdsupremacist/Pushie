@@ -118,7 +118,7 @@ let A = Grammar<Int>()
 Now you have to create the productions. In this case we want A to be translated into either an Empty string or a 0 and a 1 with another A in the middle:
 
 ```Swift
-A.to("0").and(A).to("1").transform() { $1 + 1 }
+A.to("0").and(A).and("1").transform() { $1 + 1 }
 A.to("")
 ```
 
