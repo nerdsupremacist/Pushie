@@ -7,14 +7,33 @@
 //
 
 import Foundation
+
+/// Full Grammar. Consists of a starting Variable
 public class Grammar<T> {
     
+    /// Starting Variable. This is where you words will be parsed first.
     let startVariable: GrammarVariable<T>
     
+    /**
+     Initializes a new Grammar.
+     
+     - Parameters:
+     - startVariable: Starting Variable for your Grammar.
+     
+     - Returns: An awesome Grammar. Obviously!. ;)
+     */
     public init(startVariable: GrammarVariable<T>) {
         self.startVariable = startVariable
     }
     
+    /**
+     Will translate the Grammar into a PDA
+     
+     - Parameters:
+     - start: First Object assigned to the Accumulator of your PDA
+     
+     - Returns: PDA accepting the Language of the Grammar.
+     */
     public func automata(start: T) -> Pushie<T>? {
         let state = State<T>()
         let finalState = State<T>(final: true)
@@ -56,6 +75,15 @@ public class Grammar<T> {
         return result
     }
     
+    /**
+     Will calculate the result of an input
+     
+     - Parameters:
+     - start: Start value of the Accumulator
+     - input: Input that has to be evaluated
+     
+     - Returns: nil when the input is invalid. Result of the evaluation when it's valid.
+     */
     public func handle(start: T, input: String) -> T? {
         return automata(start)?.handle(input)
     }

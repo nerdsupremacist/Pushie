@@ -7,6 +7,7 @@
 //
 
 import Foundation
+/// State in PDA
 public class State<T> {
     
     let final: Bool
@@ -18,12 +19,21 @@ public class State<T> {
             return String(ObjectIdentifier(self).uintValue)
         }
     }
-    
+
     private init(transitions: [StackElement:TransitionManager<T>] = [:], final: Bool = false) {
         self.transitions = transitions
         self.final = final
     }
     
+    
+    /**
+     Will instantiate a PDA-State
+     
+     - Parameters:
+     - final: is it a final State (Optional)
+     
+     - Returns: A beautiful PDA. Ready for calculation.
+     */
     public init(final: Bool = false) {
         self.transitions = [:]
         self.final = final
@@ -73,11 +83,27 @@ public class State<T> {
         return nil
     }
     
+    /**
+     Will create a new Transition for a specific Stack Element
+     
+     - Parameters:
+     - element: Stack Element as String
+     
+     - Returns: A Transition Manager to keep editing the transition.
+     */
     public func when(element: String) -> TransitionMaker<T> {
         let stackElement = StackElement(identifier: element)
         return when(stackElement)
     }
     
+    /**
+     Will create a new Transition for a specific Stack Element
+     
+     - Parameters:
+     - element: Stack Element
+     
+     - Returns: A Transition Manager to keep editing the transition.
+     */
     public func when(element: StackElement) -> TransitionMaker<T> {
         let dict = transitions[element] ?? TransitionManager()
         transitions[element] = dict

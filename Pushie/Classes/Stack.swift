@@ -7,7 +7,7 @@
 //
 
 import Foundation
-public class Stack {
+class Stack {
     
     var stack = [StackElement]()
     
