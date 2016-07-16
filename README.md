@@ -1,4 +1,6 @@
 # Pushie
+![alt text](https://cocoapod-badges.herokuapp.com/v/Pushie/badge.png "Taken from wikipedia")
+
 Push Down Automaton Creation in Swift. The easy way.
 
 Pushie allows you to create Push down automata quickly and easily, for quick and simple Parsing of your own defined languages. Designed to be easy to read and understand
